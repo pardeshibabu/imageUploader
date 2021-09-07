@@ -9,12 +9,5 @@ class ImageViewSet(viewsets.ModelViewSet):
     serializer_class = ImageSerializer
 
     @action(detail=False, methods=['GET'])
-    def hello(self, request):
+    def upload_image(self, request):
         return render(request, 'home.html')
-    
-    @action(detail=False, methods=['POST', 'PUT'])
-    def postdata(self, request):
-        import ipdb
-        ipdb.set_trace()
-        request.data.pop('csrfmiddlewaretoken')
-        Image.objects.create(**request.data)
