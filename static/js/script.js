@@ -21,16 +21,15 @@ btnUpload.on("change", function(e){
         // }
         var $crf_token = $('[name="csrfmiddlewaretoken"]').attr('value');
         var xhttp = new XMLHttpRequest();
-        xhttp.open( 'POST', "https://imageuploaderpardeshi.herokuapp.com/", true);
+        xhttp.open( 'POST', "http://127.0.0.1:8000", true);
         xhttp.setRequestHeader("X-CSRFToken", $crf_token);
         xhttp.send(postFormData);
         xhttp.onreadystatechange = function(result) {
             if (this.status == 201 && this.readyState == 4) {
-                createResponse = JSON.parse(this.responseText)
                 console.log(
-                    `\nEntries have been created successfully: ${createResponse}`,
-                    `green`
+                    'Photo Submitted!'
                 );
+
             }
             else{
                 console.log(
@@ -41,6 +40,7 @@ btnUpload.on("change", function(e){
         }
         // xhttp.send(formData);
         setTimeout(function(){
+            $("#myModal").modal('show');
             $("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
         },3500);
     }

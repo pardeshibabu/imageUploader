@@ -91,8 +91,8 @@
      -ms-transform:rotate(45deg);
      transform:rotate(45deg);
      position: absolute;
-     left: 17px;
-     top: 10px;
+     left: 21px;
+     top: 13px;
 }
  .file_uploaded .success_box {
     display: inline-block;
@@ -140,4 +140,8 @@
  .error_msg {
     text-align: center;
      color: #f00
+}
+
+.bs-example{
+   margin: 20px;
 }
