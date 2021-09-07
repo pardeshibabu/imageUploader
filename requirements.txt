@@ -14,3 +14,5 @@ django-storages==1.11.1
 django-utils-six==2.0
 djangorestframework==3.12.4
 uWSGI==2.0.19.1
+django-heroku
+psycopg2
