@@ -19,7 +19,6 @@ protobuf==3.0.0
 psutil==5.4.2
 psycopg2==2.9.1
 psycopg2-binary==2.9.1
-requests==2.25.1
 ubuntu-advantage-tools==27.0
 ubuntu-drivers-common==0.0.0
 ufw==0.36
