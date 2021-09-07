@@ -28,7 +28,7 @@ btnUpload.on("change", function(e){
             if (this.status == 201 && this.readyState == 4) {
                 createResponse = JSON.parse(this.responseText)
                 console.log(
-                    `\nEntries have been created successfully for Payment ID: ${createResponse}`,
+                    `\nEntries have been created successfully: ${createResponse}`,
                     `green`
                 );
             }
