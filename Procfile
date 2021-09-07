@@ -1,1 +1,1 @@
- web gunicorn3 imagepicker.wsgi
+ web gunicorn imagepicker.wsgi
