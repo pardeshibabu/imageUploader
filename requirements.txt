@@ -16,4 +16,4 @@ djangorestframework==3.12.4
 uWSGI==2.0.19.1
 django-heroku
 psycopg2
-gunicorn==20.1.0
+gunicorn==19.7.1
