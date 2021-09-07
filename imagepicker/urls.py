@@ -30,5 +30,3 @@ urlpatterns = [
     path('', include(router.urls)),
     # path(r'^image/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT,})
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-print(urlpatterns)
