@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%7@lw2gns0=!4u%ote+0*%y=x19^no_wdittow=g-013-$+txz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', '0.0.0.0', 'localhost', 'https://imageuploaderpardeshi.herokuapp.com/']
 
